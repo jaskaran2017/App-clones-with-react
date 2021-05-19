@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.main {
+  display: flex;
+}
+.logo {
+  display: flex;
+  margin: auto;
+  width: 10rem;
+
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+.flexContainer {
+  display: flex;
+  /* flex-direction: flex-end; */
+  align-content: Space-between;
+  justify-content: center;
+  list-style: none;
+}
+.flexOne {
+  display: flex;
+  flex-direction: flex-start;
+  align-content: Space-between;
+  justify-content: center;
+}
+.hoverEffect:hover {
+  background-color: #fff;
+}
+.marginright {
+  margin-left: 22px;
+  /* border: 2px solid red; */
+  /* font-size: 3em; */
+}
+.marginleft {
+  margin-left: 54rem;
+  /* border: 2px solid red; */
+  padding-left: 10px;
+}

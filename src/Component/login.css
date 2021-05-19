@@ -1,0 +1,15 @@
+.loginbody {
+  display: flex;
+  flex-direction: column;
+  max-width: 19vw;
+  height: 40vh;
+  /* border: 2px solid red; */
+  margin: 3rem auto;
+}
+.margin {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.heading {
+  font-size: 2rem;
+}

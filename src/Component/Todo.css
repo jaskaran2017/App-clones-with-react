@@ -1,0 +1,11 @@
+.card-center {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  /* min-width: 60vw; */
+}
+
+.modal {
+  margin-left: 5rem;
+}

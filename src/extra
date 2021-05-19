@@ -1,0 +1,55 @@
+ <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success">
+          <h3>Welcome!</h3> <h5>{result.user.email}</h5>
+        </Alert>
+      </Snackbar>;
+
+       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="error">
+          <h4>err.message</h4>
+        </Alert>
+      </Snackbar>;
+
+      <Snackbar
+        open={open}
+        autoHideDuration={6000}
+        onClose={(e) => setOpen(false)}
+      >
+        <div className={classes.root}>
+          <Alert onClose={(e) => setOpen(false)} severity="success">
+            <h3>Welcome!</h3> <h5>{result.user.email}</h5>
+          </Alert>
+        </div>
+      </Snackbar>;
+
+
+       <Snackbar
+          open={open}
+          autoHideDuration={6000}
+          onClose={(e) => setOpen(false)}
+        >
+          <div className={classes.root}>
+            <Alert onClose={(e) => setOpen(false)} severity="success">
+              <h3>Welcome!</h3> <h5>{err.message}</h5>
+            </Alert>
+          </div>
+        </Snackbar>
+
+        555
+        <Snackbar
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+        open={open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message="Note archived"
+        action={
+          <React.Fragment>
+            <Button color="secondary" size="small" onClick={handleClose}>
+              UNDO
+            </Button>
+            <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose}>
+              <CloseIcon fontSize="small" />
+            </IconButton>
